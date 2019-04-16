@@ -1,0 +1,8 @@
+<div *ngIf="!isGameOn" class="play-container">
+  <h1>{{playSectionText()}}</h1>
+  <div  class="play-button" (click)="onPlay()">{{playButtonText()}}</div>
+</div>
+<app-question [question]="questions[currQuest]" [currQuest]="currQuest" *ngIf="isGameOn && questions"
+  (nextQuest)="nextQuest($event)">
+</app-question>
+<app-pagination [length]="getLength()" [currQuest]="currQuest" *ngIf=" isGameOn && questions"></app-pagination>

@@ -1,0 +1,18 @@
+.pagination-container{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 0 auto;
+    width:22vw;
+    height:80px;
+
+    span{
+        height:10px;
+        width:10px;
+        background-color: #C9CFD3; 
+        border-radius:50%;
+    }
+    .marked{
+        background-color: #0D7BAB;
+    }
+}
+

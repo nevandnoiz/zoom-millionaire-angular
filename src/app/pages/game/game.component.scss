@@ -1,0 +1,33 @@
+.play-container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:55vh;
+    h1{
+        font-size: 40px;
+        color: #0D7BAB;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+    .play-button{
+        font-size:40px;
+        color: #0D7BAB;
+        text-align:center;
+        background-color: rgb(192, 235, 253);
+        border: 2px solid rgb(127, 193, 219);
+        border-radius: 23px;
+        width: 30vw;
+        height:180px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.1s;
+        cursor: pointer;
+    }
+
+    .play-button:hover{
+        background-color: rgb(182, 231, 252);
+    }
+}

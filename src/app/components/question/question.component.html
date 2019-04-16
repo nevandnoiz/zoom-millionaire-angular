@@ -1,0 +1,12 @@
+<div class="question-container">
+  <h1 class="question-title"><span>Q:{{currQuest+1}} </span>{{question.question}}</h1>
+  <div class="answers-container">
+    <div class="answer-container" *ngFor="let answer of answers; let i=index" (click)="onSelectAnswer(i)"
+      [ngClass]="getClassByStatus(i)">
+      {{answer}}
+    </div>
+  </div>
+  <div class="button-container">
+    <button (click)="onAnswer()" [ngClass]="{continue: isAnswered}">{{buttonText()}}</button>
+  </div>
+</div>
